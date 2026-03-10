@@ -94,5 +94,23 @@ app.get('/api/dashboard', (req, res) => {
 });
 
 app.listen(port, () => {
+
     console.log(`🚀 Server Aktif di http://localhost:${port}`);
 });
+
+    console.log(`
+🚀 Server CreamyBites Aktif!
+📍 URL: http://localhost:${port}
+🛠️ Mode: Development (Sandbox)
+    `);
+
+
+// UNTUK MENGATUR PAYMENT NOTIFICATION PADA MIDTRANS YANG SUDAH DI HOSTING ,LALU URL DI COPY 
+//-- app.post('/notification', (req, res) => {
+   // let notification = req.body;
+    // Di sini kodingan untuk cek status dari midtrans
+    // dan update status ke database MySQL kamu
+   // console.log("Notifikasi masuk!", notification);
+   // res.status(200).send('OK');
+//});//
+
